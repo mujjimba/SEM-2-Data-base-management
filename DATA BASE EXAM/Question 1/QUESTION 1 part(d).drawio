@@ -1,0 +1,49 @@
+<mxfile host="Electron" modified="2024-04-22T13:14:38.975Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="hEVoMgnCUQIMbZi6QEYm" version="23.1.5" type="device">
+  <diagram name="Page-1" id="DRgibLF88fHcoCF2ADJT">
+    <mxGraphModel dx="1730" dy="532" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nG4i6t0KgDVATb0Ji4Qr-19" value="GUEST" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-90" y="600" width="210" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="nG4i6t0KgDVATb0Ji4Qr-20" value="&#xa;&lt;ul&gt;&lt;li&gt;guest_id (Primary Key)&lt;/li&gt;&lt;li&gt;name&lt;/li&gt;&lt;li&gt;email&lt;/li&gt;&lt;li&gt;phone_number&lt;/li&gt;&lt;/ul&gt;&#xa;&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="nG4i6t0KgDVATb0Ji4Qr-19">
+          <mxGeometry y="50" width="210" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="nG4i6t0KgDVATb0Ji4Qr-26" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="120" y="680" as="sourcePoint" />
+            <mxPoint x="220" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nG4i6t0KgDVATb0Ji4Qr-28" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERzeroToOne;rounded=0;exitX=1;exitY=0.623;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="nG4i6t0KgDVATb0Ji4Qr-43" target="nG4i6t0KgDVATb0Ji4Qr-38">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="530" y="635" as="sourcePoint" />
+            <mxPoint x="610" y="620" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="560" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nG4i6t0KgDVATb0Ji4Qr-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="515" as="sourcePoint" />
+            <mxPoint x="670" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nG4i6t0KgDVATb0Ji4Qr-38" value="ROOM" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="460" width="230" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="nG4i6t0KgDVATb0Ji4Qr-39" value="Room_number(primary_key)&lt;br&gt;Room_type&lt;br&gt;Rate_per_night" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="nG4i6t0KgDVATb0Ji4Qr-38">
+          <mxGeometry y="50" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="nG4i6t0KgDVATb0Ji4Qr-42" value="RESERVATION" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="460" width="260" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="nG4i6t0KgDVATb0Ji4Qr-43" value="Reservation id_(primary key)&lt;br&gt;Guest_id(foreign_key referencing guests)&lt;br&gt;Room_number(foreign_key referencing room)&lt;br&gt;State_date&lt;br&gt;End_date&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="nG4i6t0KgDVATb0Ji4Qr-42">
+          <mxGeometry y="50" width="260" height="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

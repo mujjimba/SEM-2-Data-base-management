@@ -1,0 +1,62 @@
+<mxfile host="Electron" modified="2024-04-22T13:52:21.240Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="01vjMCEwhP9COCLW4sG9" version="23.1.5" type="device">
+  <diagram name="Page-1" id="2VIXWxW22_u7byT-yhUA">
+    <mxGraphModel dx="880" dy="1632" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NCkicpLCjuFFHE14UOdg-1" value="TV SERIES" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="-190" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NCkicpLCjuFFHE14UOdg-2" value="&amp;nbsp;series_id (PK)&lt;br&gt;series_name&lt;br&gt;genre" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="NCkicpLCjuFFHE14UOdg-1">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NCkicpLCjuFFHE14UOdg-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.281;entryY=-0.086;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="NCkicpLCjuFFHE14UOdg-1" source="NCkicpLCjuFFHE14UOdg-2" target="NCkicpLCjuFFHE14UOdg-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NCkicpLCjuFFHE14UOdg-3" value="EPISODE" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="-210" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NCkicpLCjuFFHE14UOdg-4" value="episode_id (PK)&lt;br&gt;episode_number&lt;br&gt;series_id(FK)&lt;br&gt;director_id (FK)" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="NCkicpLCjuFFHE14UOdg-3">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NCkicpLCjuFFHE14UOdg-5" value="ACTOR" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="-30" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NCkicpLCjuFFHE14UOdg-6" value="actor_id (PK)&lt;br&gt;actor_name&lt;br&gt;gender&lt;br&gt;date_of_birth" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="NCkicpLCjuFFHE14UOdg-5">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NCkicpLCjuFFHE14UOdg-7" value="DIRECTOR" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="-260" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NCkicpLCjuFFHE14UOdg-8" value="director_id(PK)&lt;br&gt;director_name&lt;br&gt;nationality" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="NCkicpLCjuFFHE14UOdg-7">
+          <mxGeometry y="40" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NCkicpLCjuFFHE14UOdg-11" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERzeroToOne;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="580" y="-140" as="sourcePoint" />
+            <mxPoint x="680" y="-240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="510" y="-310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NCkicpLCjuFFHE14UOdg-10" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="320" y="-90" as="sourcePoint" />
+            <mxPoint x="420" y="-190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="440" y="-150" />
+              <mxPoint x="380" y="-160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NCkicpLCjuFFHE14UOdg-20" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;startArrow=ERmany;rounded=0;entryX=0.694;entryY=1.014;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="NCkicpLCjuFFHE14UOdg-6" target="NCkicpLCjuFFHE14UOdg-2">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="250" y="50" as="sourcePoint" />
+            <mxPoint x="350" y="-50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
